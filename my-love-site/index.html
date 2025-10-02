@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Наша історія кохання</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Початкова сторінка -->
+  <section class="welcome" id="welcome">
+    <h1 class="title">Ласкаво просимо в<br> нашу історію кохання ❤️</h1>
+    <p class="subtitle">Тут усе найважливіше про нас ✨</p>
+    <button onclick="goToMenu()">Почати ➡️</button>
+  </section>
+
+  <!-- Меню -->
+  <section class="menu hidden" id="menu">
+    <h2>Обери розділ 💖</h2>
+    <div class="menu-buttons">
+      <button onclick="goToGallery()">📸 Фотографії</button>
+      <button onclick="goToTimeline()">📅 Важливі дати</button>
+      <button onclick="goToMemories()">🌍 Наші спогади</button>
+      <button onclick="goToQuiz()">❓ Квест про нас</button>
+    </div>
+  </section>
+
+  <!-- Галерея -->
+  <section class="gallery hidden" id="gallery">
+    <h2>Наші фото 📸</h2>
+    <div class="photos">
+      <img src="images/photo1.jpg" alt="Фото 1">
+      <img src="images/photo2.jpg" alt="Фото 2">
+      <img src="images/photo3.jpg" alt="Фото 3">
+    </div>
+    <button onclick="backToMenu()">⬅️ Назад</button>
+  </section>
+
+  <!-- Важливі дати -->
+  <section class="timeline hidden" id="timeline">
+    <h2>Наші важливі дати 📅</h2>
+    <ul>
+      <li>01.01.2023 — наше знайомство 💕</li>
+      <li>14.02.2023 — перше побачення 🌹</li>
+      <li>08.03.2023 — перший подарунок 🎁</li>
+    </ul>
+    <button onclick="backToMenu()">⬅️ Назад</button>
+  </section>
+
+  <!-- Спогади -->
+  <section class="memories hidden" id="memories">
+    <h2>Наші спогади 🌸</h2>
+    <ul>
+      <li>🌍 Перша подорож — <em>сюди можна додати фото</em></li>
+      <li>🎁 Перший подарунок — <em>опис/фото</em></li>
+      <li>🎂 День народження — <em>опис/фото</em></li>
+    </ul>
+    <button onclick="backToMenu()">⬅️ Назад</button>
+  </section>
+
+  <!-- Квест -->
+  <section class="quiz hidden" id="quiz">
+    <h2>Квест про нас 💕</h2>
+    <div id="quiz-container"></div>
+    <button onclick="backToMenu()">⬅️ Назад</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
